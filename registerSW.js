@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/fiore-damore/sw.js', { scope: '/fiore-damore/' })})}
