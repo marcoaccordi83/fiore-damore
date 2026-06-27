@@ -1,0 +1,49 @@
+/* ============================================
+   Il Linguaggio dei Fiori — Stili Globali
+   Palette: tenui, pastello, romantici 🌸
+   ============================================ */
+
+:root {
+  --cream:        #faf8f5;
+  --petal-white:  #f5f0ea;
+  --sage:         #b8c4ae;
+  --sage-light:   #d8e2d0;
+  --sage-pale:    #eef2eb;
+  --blush:        #e8d5c4;
+  --blush-light:  #f2e8df;
+  --dusty-rose:   #c9a99a;
+  --warm-brown:   #8b7355;
+  --text-dark:    #4a3f35;
+  --text-medium:  #7a6a5a;
+  --text-light:   #a89888;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+  min-height: 100%;
+}
+
+body {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  background-color: var(--cream);
+  color: var(--text-dark);
+  -webkit-font-smoothing: antialiased;
+  overscroll-behavior: none;
+}
+
+/* Scrollbar personalizzata */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--petal-white); }
+::-webkit-scrollbar-thumb { background: var(--sage); border-radius: 3px; }
+
+/* Selezione testo romantica */
+::selection {
+  background: var(--blush);
+  color: var(--text-dark);
+}
